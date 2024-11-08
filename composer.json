@@ -1,0 +1,19 @@
+{
+    "name": "bparker/php-crud-app",
+    "autoload": {
+        "psr-4": {
+            "Bparker\\PhpCrudApp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "BradleyParkerDev",
+            "email": "bradleyscottparker@outlook.com"
+        }
+    ],
+    "require": {},
+
+    "scripts": {
+        "serve": "php -S localhost:8000 -t src"
+      }
+}
