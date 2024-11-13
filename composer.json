@@ -1,8 +1,9 @@
 {
     "name": "bparker/php-crud-app",
+    "description": "A simple CRUD app in PHP",
     "autoload": {
         "psr-4": {
-            "Bparker\\PhpCrudApp\\": "src/"
+            "Bparker\\PhpCrudApp\\": "app/"
         }
     },
     "authors": [
@@ -11,9 +12,13 @@
             "email": "bradleyscottparker@outlook.com"
         }
     ],
-    "require": {},
-
+    "require": {
+        "firebase/php-jwt": "^6.0",
+        "vlucas/phpdotenv": "^5.4",
+        "doctrine/orm": "^3.3",
+        "doctrine/migrations": "^3.8"
+    },
     "scripts": {
-        "serve": "php -S localhost:8000 -t src"
-      }
+        "serve": "php -S localhost:8000 -t public"
+    }
 }
